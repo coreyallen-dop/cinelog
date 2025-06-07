@@ -1,0 +1,130 @@
+# 🎥 CineLog CSV Import/Export Guide
+
+Welcome to the official CineLog CSV user guide. This document outlines everything you need to know to import and export project data efficiently using CSV files.
+
+---
+
+## 📄 CSV Column Format
+
+Your CSV file must use **this exact column order**:
+
+```csv
+Project,Scene,Shot,Status,Description,Shot Size,Shot Types,Shot Movement,Camera,Lens,Focal Length,Aperture,Frame Rate,Shutter Angle,ISO,White Balance,Resolution,Aspect Ratio,Lens Height,Subject Distance,VFX Notes,Take Count,Circle Take,Roll Card Number,Setup Number,Filters,Lighting,Blocking Notes,Directors Notes,Notes,Has Reference Image
+```
+
+---
+
+## ✅ Required Fields
+
+| Column          | Required | Description                                 |
+|-----------------|----------|---------------------------------------------|
+| `Project`       | Yes      | Title of the project                        |
+| `Scene`         | Yes      | Scene number or title                       |
+| `Shot`          | Yes      | Unique shot ID (e.g., A1, B2)               |
+| `Shot Size`     | Yes      | Must match one of the valid sizes below     |
+| `Shot Types`    | Yes      | Comma-separated values from the valid list  |
+| `Shot Movement` | Yes      | Must match one of the valid values below    |
+
+All other fields are optional but recommended for a complete shot log.
+
+---
+
+## 🌟 Valid Shot Sizes
+
+Use exactly one of the following:
+
+```text
+Extreme Wide Shot
+Wide Shot
+Medium Wide Shot
+Medium Shot
+Medium Close-Up
+Close-Up
+Extreme Close-Up
+Insert
+```
+
+---
+
+## 🧠 Valid Shot Types
+
+You can enter multiple values separated by commas. Valid options include:
+
+```text
+Establishing
+Coverage
+Single
+Two Shot
+Over the Shoulder
+OTS
+Dolly
+Tracking
+Steadicam
+Handheld
+POV
+Insert
+Cutaway
+Reaction Shot
+Green Screen
+VFX Plate
+Clean Plate
+```
+
+---
+
+## 🎥 Valid Shot Movements
+
+These are the accepted movement values:
+
+```text
+Static
+Pan Left
+Pan Right
+Tilt Up
+Tilt Down
+Dolly In
+Dolly Out
+Dolly Left
+Dolly Right
+Track Left
+Track Right
+Crane Up
+Crane Down
+Zoom In
+Zoom Out
+Push In
+Pull Out
+Handheld
+Steadicam
+Gimbal
+Whip Pan
+Rack Focus
+Follow
+Reveal
+Custom
+```
+
+---
+
+## 📅 Notes & Best Practices
+
+- ✉️ To get started, export a CSV template from the app.
+- ⚠️ Only use **exact matches** from the lists above. Typos or unknown values will be ignored.
+- 🔍 The `Has Reference Image` column accepts `true` or `false`.
+- ✔️ You can leave non-required fields empty.
+
+---
+
+## 📂 Sample Row
+
+```csv
+My Project,1,A1,Planned,Wide shot of car entering driveway,Wide Shot,Coverage,Static,RED Komodo,Canon CN-E 35mm,35mm,T2.8,24,180°,800,5600K,6K,16:9,5ft,12ft,VFX add birds,3,yes,RC001,S001,None,Natural light,Actor walks in,Director wants rain fx,Check lighting on tree,true
+```
+
+---
+
+## 📅 Support
+
+Need help? Reach out at our support page.
+
+Happy shooting! 📸
